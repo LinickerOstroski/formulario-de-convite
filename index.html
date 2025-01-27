@@ -31,7 +31,6 @@
         <img src="assets/Logo.svg" alt="Logo do site">
         <h1>Festivite</h1>
         <h3>Crie um convite digital para o seu evento</h3>
-        <img class="background" src="./assets/Background.png" alt="">
       </div>
     </aside>
     <main>
@@ -61,17 +60,21 @@
                   <input type="datetime-local" id="fim-evento">
                 </div>
 
-                <div class="radio-container">
-                  <div class="radio-caixa">
-                    <img src="" alt="">
-                    <label for="presencial">Precensial</label>
-                    <input type="radio" name="tipo-evento" id="presencial" value="presencial">
-                  </div>
+                <div>
+                  <p>Tipo</p>
+                  <div class="radio-container">
 
-                  <div class="radio-caixa">
-                    <img src="" alt="">
-                    <label for="online">Online</label>
-                    <input type="radio" name="tipo-evento" id="online" value="online">
+                    <div class="radio-caixa">
+                      <img src="./assets/presencial.svg" alt="">
+                      <label for="presencial">Precensial</label>
+                      <input type="radio" name="tipo-evento" id="presencial" value="presencial" checked>
+                    </div>
+
+                    <div class="radio-caixa">
+                      <img src="./assets/online.svg" alt="">
+                      <label for="online">Online</label>
+                      <input type="radio" name="tipo-evento" id="online" value="online">
+                    </div>
                   </div>
                 </div>
 
