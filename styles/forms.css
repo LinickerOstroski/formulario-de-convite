@@ -1,0 +1,32 @@
+@import url(fields/index.css);
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 560px;
+
+  #nome-evento {
+    margin-bottom: 1rem;
+  }
+
+  label {
+    margin-bottom: 0.75rem;
+  }
+
+  .campos-evento {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    .input-evento {
+      width: 17rem;
+      display: flex;
+      flex-direction: column;
+
+
+    }
+  }
+
+}

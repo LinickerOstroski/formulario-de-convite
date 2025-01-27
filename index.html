@@ -5,217 +5,230 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário de convite</title>
+  <link rel="stylesheet" href="styles/index.css">
 </head>
 
 <body>
   <div id="app">
-    <main>
-
-    </main>
-    <h1>Crie seu convite</h1>
-
-    <section id="sobre">
-      <div class="sobre-evento">
-        <img src="" alt="Imagem de calendário">
-        <h3>Sobre o evento</h3>
+    <aside>
+      <div class="conteudo-aside">
+        <img src="assets/Logo.svg" alt="Logo do site">
+        <h1>Festivite</h1>
+        <h3>Crie um convite digital para o seu evento</h3>
+        <img class="background" src="./assets/Background.png" alt="">
       </div>
+    </aside>
+    <main>
+      <div class="conteudo-main">
 
-      <form action="#">
-        <fieldset>
-          <label for="nome-evento">Título</label>
-          <input type="text" id="nome-evento" placeholder="Nome do evento">
+        <h1>Crie seu convite</h1>
 
-          <div class="campos-evento">
-            <label for="inicio-evento">Início</label>
-            <input type="datetime" id="inicio-evento">
+        <section id="sobre">
+          <div class="titulo-secao">
+            <img src="./assets/calendario.svg" alt="Imagem de calendário">
+            <h3>Sobre o evento</h3>
+          </div>
 
-            <label for="fim-evento">Fim</label>
-            <input type="datetime" id="fim-evento">
+          <form action="#">
+            <fieldset>
+              <label for="nome-evento">Título</label>
+              <input type="text" id="nome-evento" placeholder="Nome do evento">
 
-            <div class="radio-container">
-              <div class="radio-caixa">
-                <img src="" alt="">
-                <label for="presencial">Precensial</label>
-                <input type="radio" name="tipo-evento" id="presencial" value="presencial">
+              <div class="campos-evento">
+                <div class="input-evento">
+                  <label for="inicio-evento">Início</label>
+                  <input type="datetime-local" id="inicio-evento">
+                </div>
+
+                <div class="input-evento">
+                  <label for="fim-evento">Fim</label>
+                  <input type="datetime-local" id="fim-evento">
+                </div>
+
+                <div class="radio-container">
+                  <div class="radio-caixa">
+                    <img src="" alt="">
+                    <label for="presencial">Precensial</label>
+                    <input type="radio" name="tipo-evento" id="presencial" value="presencial">
+                  </div>
+
+                  <div class="radio-caixa">
+                    <img src="" alt="">
+                    <label for="online">Online</label>
+                    <input type="radio" name="tipo-evento" id="online" value="online">
+                  </div>
+                </div>
+
+                <div class="input-evento">
+                  <label for="local-evento">Local</label>
+                  <input type="text" id="local-evento" placeholder="Link ou endereço">
+                </div>
               </div>
 
-              <div class="radio-caixa">
-                <img src="" alt="">
-                <label for="online">Online</label>
-                <input type="radio" name="tipo-evento" id="online" value="online">
+            </fieldset>
+
+            <label for="descricao-evento">Descrição</label>
+            <textarea name="descricao-evento" id="descricao-evento"
+              placeholder="Escreva sobre os detalhes do evento"></textarea>
+        </section>
+
+        <section id="personalizacao">
+
+          <div class="titulo-secao">
+            <img src="" alt="Imagem de pincel">
+            <h3>Personalização</h3>
+          </div>
+
+          <fieldset id="cor-evento">
+            <div class="selecao-de-cor">
+              <input type="radio" name="cor-principal" id="azul">
+              <div class="cor"></div>
+            </div>
+            <div class="selecao-de-cor">
+              <input type="radio" name="cor-principal" id="purple">
+              <div class="cor"></div>
+            </div>
+            <div class="selecao-de-cor">
+              <input type="radio" name="cor-principal" id="roxo">
+              <div class="cor"></div>
+            </div>
+            <div class="selecao-de-cor">
+              <input type="radio" name="cor-principal" id="rosa">
+              <div class="cor"></div>
+            </div>
+            <div class="selecao-de-cor">
+              <input type="radio" name="cor-principal" id="salmao">
+              <div class="cor"></div>
+            </div>
+            <div class="selecao-de-cor">
+              <input type="radio" name="cor-principal" id="vermelho">
+              <div class="cor"></div>
+            </div>
+            <div class="selecao-de-cor">
+              <input type="radio" name="cor-principal" id="laranja">
+              <div class="cor"></div>
+            </div>
+            <div class="selecao-de-cor">
+              <input type="radio" name="cor-principal" id="amarelo">
+              <div class="cor"></div>
+            </div>
+            <div class="selecao-de-cor">
+              <input type="radio" name="cor-principal" id="verde-limao">
+              <div class="cor"></div>
+            </div>
+            <div class="selecao-de-cor">
+              <input type="radio" name="cor-principal" id="verde">
+              <div class="cor"></div>
+            </div>
+            <div class="selecao-de-cor">
+              <input type="radio" name="cor-principal" id="azul-bebe">
+              <div class="cor"></div>
+            </div>
+          </fieldset>
+
+          <fieldset id="tema do evento">
+            <div class="radio-interno">
+              <div class="radio-imagem">
+                <input type="radio" name="tema-evento" id="aniversario">
+                <img src="./assets/aniversario.jpg" alt="Imagem de um bolo de aniversário">
+                <label for="aniversario">aniversario</label>
               </div>
             </div>
 
-            <label for="local-evento">Local</label>
-            <input type="text" id="local-evento" placeholder="Link ou endereço">
-          </div>
+            <div class="radio-interno">
+              <div class="radio-imagem">
+                <input type="radio" name="tema-evento" id="infantil">
+                <img src="./assets/infantil.jpg" alt="Imagem colorida de uma festa">
+                <label for="infantil">Infantil</label>
+              </div>
+            </div>
 
-        </fieldset>
+            <div class="radio-interno">
+              <div class="radio-imagem">
+                <input type="radio" name="tema-evento" id="formatura">
+                <img src="./assets/infantil.jpg" alt="Imagem de formatura">
+                <label for="formatura">Formatura</label>
+              </div>
+            </div>
 
-        <label for="descricao-evento">Descrição</label>
-        <textarea name="descricao-evento" id="descricao-evento"
-          placeholder="Escreva sobre os detalhes do evento"></textarea>
-    </section>
+            <div class="radio-interno">
+              <div class="radio-imagem">
+                <input type="radio" name="tema-evento" id="casamento">
+                <img src="./assets/casamento.jpg" alt="Imagem de alianças de casamento">
+                <label for="casamento">Casamento</label>
+              </div>
+            </div>
 
-    <section id="personalizacao">
-      <div class="personalizacao-evento">
-        <img src="" alt="Imagem de pincel">
-        <h3>Personalização</h3>
+            <div class="radio-interno">
+              <div class="radio-imagem">
+                <input type="radio" name="tema-evento" id="cha-de-bebe">
+                <img src="./assets/cha-de-bebe.jpg" alt="Imagem de chá de bebê">
+                <label for="cha-de-bebe">Chá de bebê</label>
+              </div>
+            </div>
+
+            <div class="radio-interno">
+              <div class="radio-imagem">
+                <input type="radio" name="tema-evento" id="cha-de-panela">
+                <img src="./assets/cha-de-panela.jpg" alt="Imagem de chá de panela">
+                <label for="cha-de-bebe">Chá de panela</label>
+              </div>
+            </div>
+
+            <div class="radio-interno">
+              <div class="radio-imagem">
+                <input type="radio" name="tema-evento" id="carnaval">
+                <img src="./assets/carnaval.jpg" alt="Imagem de carnaval">
+                <label for="carnaval">Carnaval</label>
+              </div>
+            </div>
+
+            <div class="radio-interno">
+              <div class="radio-imagem">
+                <input type="radio" name="tema-evento" id="pascoa">
+                <img src="./assets/pascoa.jpg" alt="Imagem de pascoa">
+                <label for="pascoa">Páscoa</label>
+              </div>
+            </div>
+
+            <div class="radio-interno">
+              <div class="radio-imagem">
+                <input type="radio" name="tema-evento" id="sao-joao">
+                <img src="./assets/sao-joao.jpg" alt="Imagem de sao-joao">
+                <label for="sao-joao">São João</label>
+              </div>
+            </div>
+
+            <div class="radio-interno">
+              <div class="radio-imagem">
+                <input type="radio" name="tema-evento" id="halloween">
+                <img src="./assets/halloween.jpg" alt="Imagem de halloween">
+                <label for="halloween">Halloween</label>
+              </div>
+            </div>
+
+            <div class="radio-interno">
+              <div class="radio-imagem">
+                <input type="radio" name="tema-evento" id="natal">
+                <img src="./assets/natal.jpg" alt="Imagem de natal">
+                <label for="natal">Natal</label>
+              </div>
+            </div>
+
+            <div class="radio-interno">
+              <div class="radio-imagem">
+                <input type="radio" name="tema-evento" id="outro">
+                <img src="./assets/outro.jpg" alt="Imagem de outro">
+                <label for="outro">Outro</label>
+              </div>
+            </div>
+
+          </fieldset>
+        </section>
+        </form>
       </div>
+    </main>
 
-      <fieldset id="cor-evento">
-        <div class="selecao-de-cor">
-          <input type="radio" name="cor-principal" id="azul">
-          <div class="cor"></div>
-        </div>
-        <div class="selecao-de-cor">
-          <input type="radio" name="cor-principal" id="purple">
-          <div class="cor"></div>
-        </div>
-        <div class="selecao-de-cor">
-          <input type="radio" name="cor-principal" id="roxo">
-          <div class="cor"></div>
-        </div>
-        <div class="selecao-de-cor">
-          <input type="radio" name="cor-principal" id="rosa">
-          <div class="cor"></div>
-        </div>
-        <div class="selecao-de-cor">
-          <input type="radio" name="cor-principal" id="salmao">
-          <div class="cor"></div>
-        </div>
-        <div class="selecao-de-cor">
-          <input type="radio" name="cor-principal" id="vermelho">
-          <div class="cor"></div>
-        </div>
-        <div class="selecao-de-cor">
-          <input type="radio" name="cor-principal" id="laranja">
-          <div class="cor"></div>
-        </div>
-        <div class="selecao-de-cor">
-          <input type="radio" name="cor-principal" id="amarelo">
-          <div class="cor"></div>
-        </div>
-        <div class="selecao-de-cor">
-          <input type="radio" name="cor-principal" id="verde-limao">
-          <div class="cor"></div>
-        </div>
-        <div class="selecao-de-cor">
-          <input type="radio" name="cor-principal" id="verde">
-          <div class="cor"></div>
-        </div>
-        <div class="selecao-de-cor">
-          <input type="radio" name="cor-principal" id="azul-bebe">
-          <div class="cor"></div>
-        </div>
-      </fieldset>
-
-      <fieldset id="tema do evento">
-        <div class="radio-interno">
-          <div class="radio-imagem">
-            <input type="radio" name="tema-evento" id="aniversario">
-            <img src="./assets/aniversario.jpg" alt="Imagem de um bolo de aniversário">
-            <label for="aniversario">aniversario</label>
-          </div>
-        </div>
-
-        <div class="radio-interno">
-          <div class="radio-imagem">
-            <input type="radio" name="tema-evento" id="infantil">
-            <img src="./assets/infantil.jpg" alt="Imagem colorida de uma festa">
-            <label for="infantil">Infantil</label>
-          </div>
-        </div>
-
-        <div class="radio-interno">
-          <div class="radio-imagem">
-            <input type="radio" name="tema-evento" id="formatura">
-            <img src="./assets/infantil.jpg" alt="Imagem de formatura">
-            <label for="formatura">Formatura</label>
-          </div>
-        </div>
-
-        <div class="radio-interno">
-          <div class="radio-imagem">
-            <input type="radio" name="tema-evento" id="casamento">
-            <img src="./assets/casamento.jpg" alt="Imagem de alianças de casamento">
-            <label for="casamento">Casamento</label>
-          </div>
-        </div>
-
-        <div class="radio-interno">
-          <div class="radio-imagem">
-            <input type="radio" name="tema-evento" id="cha-de-bebe">
-            <img src="./assets/cha-de-bebe.jpg" alt="Imagem de chá de bebê">
-            <label for="cha-de-bebe">Chá de bebê</label>
-          </div>
-        </div>
-
-        <div class="radio-interno">
-          <div class="radio-imagem">
-            <input type="radio" name="tema-evento" id="cha-de-panela">
-            <img src="./assets/cha-de-panela.jpg" alt="Imagem de chá de panela">
-            <label for="cha-de-bebe">Chá de panela</label>
-          </div>
-        </div>
-
-        <div class="radio-interno">
-          <div class="radio-imagem">
-            <input type="radio" name="tema-evento" id="carnaval">
-            <img src="./assets/carnaval.jpg" alt="Imagem de carnaval">
-            <label for="carnaval">Carnaval</label>
-          </div>
-        </div>
-
-        <div class="radio-interno">
-          <div class="radio-imagem">
-            <input type="radio" name="tema-evento" id="pascoa">
-            <img src="./assets/pascoa.jpg" alt="Imagem de pascoa">
-            <label for="pascoa">Páscoa</label>
-          </div>
-        </div>
-
-        <div class="radio-interno">
-          <div class="radio-imagem">
-            <input type="radio" name="tema-evento" id="sao-joao">
-            <img src="./assets/sao-joao.jpg" alt="Imagem de sao-joao">
-            <label for="sao-joao">São João</label>
-          </div>
-        </div>
-
-        <div class="radio-interno">
-          <div class="radio-imagem">
-            <input type="radio" name="tema-evento" id="halloween">
-            <img src="./assets/halloween.jpg" alt="Imagem de halloween">
-            <label for="halloween">Halloween</label>
-          </div>
-        </div>
-
-        <div class="radio-interno">
-          <div class="radio-imagem">
-            <input type="radio" name="tema-evento" id="natal">
-            <img src="./assets/natal.jpg" alt="Imagem de natal">
-            <label for="natal">Natal</label>
-          </div>
-        </div>
-
-        <div class="radio-interno">
-          <div class="radio-imagem">
-            <input type="radio" name="tema-evento" id="outro">
-            <img src="./assets/outro.jpg" alt="Imagem de outro">
-            <label for="outro">Outro</label>
-          </div>
-        </div>
-
-
-
-      </fieldset>
-    </section>
-
-    </form>
-
-    <aside>
-    </aside>
   </div>
 </body>
 
