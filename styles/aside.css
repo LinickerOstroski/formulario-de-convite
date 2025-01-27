@@ -1,6 +1,16 @@
 .conteudo-aside {
   margin-inline: 130px;
   margin-block: 80px;
+
+  h1 {
+    font: var(--logo);
+    color: var(--pink);
+  }
+
+  h3 {
+    font: light 1rem var(--font-family);
+    color: var(--text-heading);
+  }
 }
 
 .background {

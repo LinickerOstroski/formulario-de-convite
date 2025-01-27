@@ -6,7 +6,22 @@
 
 :root {
 
+  --font-family: "Open Sans", serif;
+  --leckerli-one: "Leckerli One", serif;
+  --baloo-2: "Baloo 2", serif;
+
+  --logo: normal 2.5rem var(--leckerli-one);
+  --heading-md: bold 1.75rem var(--baloo-2);
+  --heading-sm: bold 1.12rem var(--baloo-2);
+
+  --body-md: normal 1rem var(--font-family);
+  --body-sm: normal 0.85rem var(--font-family);
+  --body-sm: normal 0.75rem var(--font-family);
+
+
   --brand-light: #59B2FF;
+
+
   --brand-mid: #3487CF;
   --brand-dark: #1D6FB6;
 
@@ -37,6 +52,7 @@
 
 body {
   overflow: hidden;
+  font-family: var(--font-family);
 
   background-color: var(--shape-background);
 }

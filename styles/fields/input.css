@@ -5,5 +5,10 @@ input[type="datetime-local"] {
   border-radius: 0.5rem;
   height: 3rem;
   padding-left: 1rem;
-  color: var(--input-placeholder)
+  font: var(--body-md);
+  color: var(--text-heading);
+
+  &::placeholder {
+    color: var(--input-placeholder);
+  }
 }
