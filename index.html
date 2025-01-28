@@ -83,22 +83,26 @@
                   <input type="text" id="local-evento" placeholder="Link ou endereço">
                 </div>
               </div>
+              <div class="descricao">
+                <label for="descricao-evento">Descrição</label>
+                <textarea name="descricao-evento" id="descricao-evento"
+                  placeholder="Escreva sobre os detalhes do evento"></textarea>
+              </div>
 
             </fieldset>
 
-            <label for="descricao-evento">Descrição</label>
-            <textarea name="descricao-evento" id="descricao-evento"
-              placeholder="Escreva sobre os detalhes do evento"></textarea>
+
         </section>
 
         <section id="personalizacao">
 
           <div class="titulo-secao">
-            <img src="" alt="Imagem de pincel">
+            <img src="./assets/pincel.svg" alt="Imagem de pincel">
             <h3>Personalização</h3>
           </div>
 
           <fieldset id="cor-evento">
+            <legend>Cor Principal</legend>
             <div class="selecao-de-cor">
               <input type="radio" name="cor-principal" id="azul">
               <div class="cor"></div>
@@ -145,12 +149,13 @@
             </div>
           </fieldset>
 
-          <fieldset id="tema do evento">
+          <fieldset id="tema-do-evento">
+            <legend>Tema do Evento</legend>
             <div class="radio-interno">
               <div class="radio-imagem">
                 <input type="radio" name="tema-evento" id="aniversario">
                 <img src="./assets/aniversario.jpg" alt="Imagem de um bolo de aniversário">
-                <label for="aniversario">aniversario</label>
+                <label for="aniversario">Aniversário</label>
               </div>
             </div>
 

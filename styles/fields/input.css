@@ -1,5 +1,6 @@
 input[type="text"],
-input[type="datetime-local"] {
+input[type="datetime-local"],
+textarea {
   background-color: var(--input-base);
   border: 1px solid var(--input-stroke);
   border-radius: 0.5rem;
