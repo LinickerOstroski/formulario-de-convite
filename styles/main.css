@@ -120,6 +120,7 @@ main {
     display: flex;
     gap: 12px;
 
+
     legend {
       margin-top: 1.5rem;
       margin-bottom: .9rem;
@@ -203,9 +204,14 @@ main {
     flex-wrap: wrap;
     gap: 8px;
 
+    legend {
+      padding-top: 1.5rem;
+      padding-bottom: .9rem;
+      font: var(--body-md);
+    }
+
     .radio-interno {
       .radio-imagem {
-
         border-radius: .5rem;
         border: 2px solid var(--input-stroke);
         padding: 4px;
@@ -228,6 +234,11 @@ main {
 
         label {
           margin-block: 8px;
+        }
+
+        &:has(:checked) {
+          border: 2px solid var(--brand-light);
+          border-radius: 8px;
         }
       }
     }
